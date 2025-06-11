@@ -1,0 +1,19 @@
+[
+  { "category": "Fietsdiefstal", "joke": "🚲 Wat zegt een fietsdief als hij gepakt wordt? ‘Ik dacht dat hij van mij was, echt!’" },
+  { "category": "Autodiefstal", "joke": "🚗 Waarom nam de autodief een handboek mee? Hij wilde het stuur in eigen handen nemen." },
+  { "category": "Bromfietsdiefstal", "joke": "🛵 Waarom stal hij een brommer? Hij wilde een vliegende start zonder rijbewijs." },
+  { "category": "Motordiefstal", "joke": "🏍️ Waarom stal hij een motor? Omdat hij te lui was om te stappen." },
+  { "category": "Beschadiging aan auto", "joke": "🔧 Waarom kreeg de auto een depressie? Iemand had z'n lak beschadigd." },
+  { "category": "Inbraak in bedrijf of handelszaak", "joke": "🏪 Waarom ging hij niet naar de winkel? Hij vond het spannender om ’s nachts binnen te breken." },
+  { "category": "Woninginbraak", "joke": "🔐 Waarom bracht de inbreker een kussen mee? Voor een zachte landing." },
+  { "category": "Sluikstorten", "joke": "🗑️ Wat zei de sluikstorter? 'Dat is geen afval, dat is straatkunst!'" },
+  { "category": "Parkeerovertredingen", "joke": "🅿️ Waarom parkeerde hij fout? Omdat hij dacht dat regels alleen voor anderen gelden." },
+  { "category": "Graffiti", "joke": "🎨 Waarom doen graffitikunstenaars het stiekem? Omdat hun werk niet erkend wordt door het muurvast systeem." },
+  { "category": "Diefstal gewapenderhand", "joke": "🔫 De overvaller zei: 'Geld of leven!' De klant vroeg: 'Kan ik met Payconiq betalen?'" },
+  { "category": "Diefstal met geweld zonder wapen", "joke": "🥊 Waarom had de dief geen wapen nodig? Zijn grote mond was al gevaarlijk genoeg." },
+  { "category": "Diefstal uit of aan voertuigen", "joke": "🚘 Waarom stal hij enkel autoradio's? Omdat hij wilde dat z'n leven weer muziek werd." },
+  { "category": "Zakkenrollerij", "joke": "👜 Wat zei de zakkenroller na z'n werkdag? 'Tijd om mijn eigen zakken te vullen.'" },
+  { "category": "Geluidshinder", "joke": "🔊 Waarom werd de DJ opgepakt? Hij draaide crimineel goede beats." },
+  { "category": "Verkeersongevallen met lichamelijk letsel", "joke": "🚑 Waarom keek de chauffeur op zijn gsm? Omdat hij dacht dat verkeersregels optioneel waren." },
+  { "category": "default", "joke": "💼 Misdaad loont niet... tenzij je er een mopje bij verzint." }
+]
