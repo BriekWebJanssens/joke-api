@@ -29,10 +29,13 @@ export function getAllMopjes(req, res) {
 export function getMopjeByCategorie(req, res) {
     try {
         const data = JSON.parse(fs.readFileSync(filePath));
-        const categorie = req.params.categorie.toLowerCase();
+        const categorie = decodeURIComponent(req.params.categorie).toLowerCase();
 
-        const gevonden = data.find(mop => mop.category.toLowerCase() === categorie)
-            || data.find(mop => mop.category === 'default');
+        const gevonden = data.find(mop =>
+            mop.category.toLowerCase() === categorie
+        ) || data.find(mop =>
+            mop.category.toLowerCase() === 'default'
+        );
 
         if (!gevonden) {
             return res.status(404).json({
