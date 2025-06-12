@@ -41,8 +41,4 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Render vereist een dynamische poortbinding
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Joke API draait op poort ${PORT}`);
-});
+export { app };
