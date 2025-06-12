@@ -1,19 +1,70 @@
 [
-  { "category": "Fietsdiefstal", "joke": "🚲 Wat zegt een fietsdief als hij gepakt wordt? ‘Ik dacht dat hij van mij was, echt!’" },
-  { "category": "Autodiefstal", "joke": "🚗 Waarom nam de autodief een handboek mee? Hij wilde het stuur in eigen handen nemen." },
-  { "category": "Bromfietsdiefstal", "joke": "🛵 Waarom stal hij een brommer? Hij wilde een vliegende start zonder rijbewijs." },
-  { "category": "Motordiefstal", "joke": "🏍️ Waarom stal hij een motor? Omdat hij te lui was om te stappen." },
-  { "category": "Beschadiging aan auto", "joke": "🔧 Waarom kreeg de auto een depressie? Iemand had z'n lak beschadigd." },
-  { "category": "Inbraak in bedrijf of handelszaak", "joke": "🏪 Waarom ging hij niet naar de winkel? Hij vond het spannender om ’s nachts binnen te breken." },
-  { "category": "Woninginbraak", "joke": "🔐 Waarom bracht de inbreker een kussen mee? Voor een zachte landing." },
-  { "category": "Sluikstorten", "joke": "🗑️ Wat zei de sluikstorter? 'Dat is geen afval, dat is straatkunst!'" },
-  { "category": "Parkeerovertredingen", "joke": "🅿️ Waarom parkeerde hij fout? Omdat hij dacht dat regels alleen voor anderen gelden." },
-  { "category": "Graffiti", "joke": "🎨 Waarom doen graffitikunstenaars het stiekem? Omdat hun werk niet erkend wordt door het muurvast systeem." },
-  { "category": "Diefstal gewapenderhand", "joke": "🔫 De overvaller zei: 'Geld of leven!' De klant vroeg: 'Kan ik met Payconiq betalen?'" },
-  { "category": "Diefstal met geweld zonder wapen", "joke": "🥊 Waarom had de dief geen wapen nodig? Zijn grote mond was al gevaarlijk genoeg." },
-  { "category": "Diefstal uit of aan voertuigen", "joke": "🚘 Waarom stal hij enkel autoradio's? Omdat hij wilde dat z'n leven weer muziek werd." },
-  { "category": "Zakkenrollerij", "joke": "👜 Wat zei de zakkenroller na z'n werkdag? 'Tijd om mijn eigen zakken te vullen.'" },
-  { "category": "Geluidshinder", "joke": "🔊 Waarom werd de DJ opgepakt? Hij draaide crimineel goede beats." },
-  { "category": "Verkeersongevallen met lichamelijk letsel", "joke": "🚑 Waarom keek de chauffeur op zijn gsm? Omdat hij dacht dat verkeersregels optioneel waren." },
-  { "category": "default", "joke": "💼 Misdaad loont niet... tenzij je er een mopje bij verzint." }
+  {
+    "category": "Fietsdiefstal",
+    "joke": "🚲 Waarom nam de fietsdief een bel mee? Zodat z’n geweten toch nog ergens rinkelde."
+  },
+  {
+    "category": "Autodiefstal",
+    "joke": "🚗 Waarom stal hij een Tesla? Hij wilde een criminele carrière… op automatische piloot."
+  },
+  {
+    "category": "Bromfietsdiefstal",
+    "joke": "🛵 Waarom stal hij een brommer? Zijn benen stonden in staking."
+  },
+  {
+    "category": "Motordiefstal",
+    "joke": "🏍️ Wat zei de motordief? 'Ik ben geen dief, ik ben gewoon heel snel met andermans spullen.'"
+  },
+  {
+    "category": "Beschadiging aan auto",
+    "joke": "🔧 Waarom kraste hij een auto? Hij dacht dat het kunst was: 'Carving met karakter!'"
+  },
+  {
+    "category": "Inbraak in bedrijf of handelszaak",
+    "joke": "🏪 Waarom brak hij in bij de nachtwinkel? Omdat ‘open 24/7’ hem te letterlijk leek."
+  },
+  {
+    "category": "Woninginbraak",
+    "joke": "🔐 Waarom nam de inbreker pantoffels mee? Om zachtjes binnen te sluipen zonder herrie."
+  },
+  {
+    "category": "Sluikstorten",
+    "joke": "🗑️ Waarom dumpt hij afval in de natuur? ‘Ik geef de bomen gewoon cadeautjes!’"
+  },
+  {
+    "category": "Parkeerovertredingen",
+    "joke": "🅿️ Waarom parkeerde hij op het zebrapad? Hij dacht dat strepen betekenden: VIP-parking."
+  },
+  {
+    "category": "Graffiti",
+    "joke": "🎨 Wat zei de graffitikunstenaar tegen de muur? ‘Jij inspireert me… om illegaal te zijn.’"
+  },
+  {
+    "category": "Diefstal gewapenderhand",
+    "joke": "🔫 De overvaller zei: ‘Geef me alles!’ De klant antwoordde: ‘Kan het ook via overschrijving?’"
+  },
+  {
+    "category": "Diefstal met geweld zonder wapen",
+    "joke": "🥊 Waarom gebruikte hij geen wapen? Zijn ego was al scherp genoeg."
+  },
+  {
+    "category": "Diefstal uit of aan voertuigen",
+    "joke": "🚘 Waarom stal hij alleen ruitenwissers? ‘Zo blijft het mysterieus… druppelsgewijs.’"
+  },
+  {
+    "category": "Zakkenrollerij",
+    "joke": "👜 Waarom deed de zakkenroller yoga? Om nog soepeler in andermans zakken te glijden."
+  },
+  {
+    "category": "Geluidshinder",
+    "joke": "🔊 Waarom werd hij opgepakt? Zijn feestmodus had geen uitknop."
+  },
+  {
+    "category": "Verkeersongevallen met lichamelijk letsel",
+    "joke": "🚑 Waarom reed hij door het rood? Hij dacht dat het een uitdaging was, geen verbod."
+  },
+  {
+    "category": "default",
+    "joke": "💼 Crimineel gedrag? Slecht idee. Maar wel goed voor een mop in deze API."
+  }
 ]
