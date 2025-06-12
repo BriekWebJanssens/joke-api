@@ -4,10 +4,14 @@ import { mopjesRouter } from './routers/mopjes.js';
 
 const app = express();
 
+// Middleware
 app.use(cors());
 app.use(express.json());
+
+// Routes
 app.use('/api/mopjes', mopjesRouter);
 
+// Basisroute
 app.get('/', (req, res) => {
     res.status(200).json({
         status: 'success',
@@ -18,6 +22,7 @@ app.get('/', (req, res) => {
     });
 });
 
+// 404-handler
 app.use((req, res) => {
     res.status(404).json({
         status: 'fail',
@@ -26,6 +31,7 @@ app.use((req, res) => {
     });
 });
 
+// Foutafhandeling
 app.use((err, req, res, next) => {
     console.error('Interne fout:', err);
     res.status(500).json({
@@ -35,4 +41,8 @@ app.use((err, req, res, next) => {
     });
 });
 
-export { app };
+// Render vereist een dynamische poortbinding
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Joke API draait op poort ${PORT}`);
+});
