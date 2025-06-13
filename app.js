@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import morgan from 'morgan';
 import { mopjesRouter } from './routers/mopjes.js';
 
 const app = express();
@@ -8,11 +9,22 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//Debugging logs zichtbaar in Render
+app.use((req, res, next) => {
+    const tijdstip = new Date().toISOString();
+    console.log(`[${tijdstip}] ${req.method} ${req.originalUrl}`);
+    next();
+});
+
+// HTTP logging via morgan
+app.use(morgan('dev'));
+
 // Routes
 app.use('/api/mopjes', mopjesRouter);
 
 // Basisroute
 app.get('/', (req, res) => {
+    console.log('Root endpoint bezocht');
     res.status(200).json({
         status: 'success',
         message: 'Joke API draait',
@@ -24,6 +36,7 @@ app.get('/', (req, res) => {
 
 // 404-handler
 app.use((req, res) => {
+    console.warn(`Onbekend endpoint: ${req.originalUrl}`);
     res.status(404).json({
         status: 'fail',
         message: `Endpoint ${req.originalUrl} bestaat niet`,
