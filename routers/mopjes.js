@@ -1,9 +1,12 @@
 import express from 'express';
 import { getAllMopjes, getMopjeByCategorie } from '../controllers/mopjes.js';
 
-const router = express.Router();
+const mopjesRouter = express.Router();
 
-router.get('/', getAllMopjes);
-router.get('/:categorie', getMopjeByCategorie);
+mopjesRouter.route('/')
+    .get(getAllMopjes);
 
-export { router as mopjesRouter };
+mopjesRouter.route('/:categorie')
+    .get(getMopjeByCategorie);
+
+export { mopjesRouter };

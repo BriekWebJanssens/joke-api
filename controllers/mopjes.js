@@ -6,20 +6,24 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const filePath = path.resolve(__dirname, '../data/mopjes.json');
 
-//GET /api/mopjes
-export function getAllMopjes(req, res) {
+// GET /api/mopjes
+export const getAllMopjes = (req, res) => {
     try {
         const data = JSON.parse(fs.readFileSync(filePath));
         console.log('Alle mopjes verzonden naar client');
         res.status(200).json({ status: 'success', data });
     } catch (err) {
         console.error('Fout bij lezen van mopjes.json:', err);
-        res.status(500).json({ status: 'error', message: 'Kon mopjes niet laden', code: 500 });
+        res.status(500).json({
+            status: 'error',
+            message: 'Kon mopjes niet laden',
+            code: 500
+        });
     }
-}
+};
 
-//GET /api/mopjes/:categorie
-export function getMopjeByCategorie(req, res) {
+// GET /api/mopjes/:categorie
+export const getMopjeByCategorie = (req, res) => {
     try {
         const data = JSON.parse(fs.readFileSync(filePath));
         const categorie = decodeURIComponent(req.params.categorie).toLowerCase();
@@ -49,4 +53,4 @@ export function getMopjeByCategorie(req, res) {
             code: 500
         });
     }
-}
+};

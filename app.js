@@ -1,40 +1,49 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import helmet from 'helmet';
 import { mopjesRouter } from './routers/mopjes.js';
 
 const app = express();
 
-// Middleware
+//Middleware voor beveiliging
+app.use(helmet());
+
+//Middleware voor CORS
 app.use(cors());
+
+// Middleware om JSON-requests correct te verwerken
 app.use(express.json());
 
-//Debugging logs zichtbaar in Render
+//Debug logging (timestamp + url)
 app.use((req, res, next) => {
     const tijdstip = new Date().toISOString();
     console.log(`[${tijdstip}] ${req.method} ${req.originalUrl}`);
     next();
 });
 
-// HTTP logging via morgan
-app.use(morgan('dev'));
+//HTTP-logging via morgan ('combined' bevat datum en statuscode)
+app.use(morgan('combined'));
 
-// Routes
+//Routes
 app.use('/api/mopjes', mopjesRouter);
 
-// Basisroute
+//Root endpoint met correcte info
 app.get('/', (req, res) => {
     console.log('Root endpoint bezocht');
     res.status(200).json({
         status: 'success',
         message: 'Joke API draait',
         data: {
-            endpoint: '/api/mopjes'
+            endpoints: [
+                '/api/mopjes',
+                '/api/mopjes/:categorie'
+            ]
         }
     });
 });
 
-// 404-handler
+//404-handler
 app.use((req, res) => {
     console.warn(`Onbekend endpoint: ${req.originalUrl}`);
     res.status(404).json({
@@ -44,7 +53,7 @@ app.use((req, res) => {
     });
 });
 
-// Foutafhandeling
+//Foutafhandeling
 app.use((err, req, res, next) => {
     console.error('Interne fout:', err);
     res.status(500).json({
